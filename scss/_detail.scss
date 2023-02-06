@@ -1,0 +1,149 @@
+.car-detail-page {
+  margin-top: 50px;
+  .car-detail-section {
+    .slider {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .slider-nav {
+      margin-top: 20px;
+      &__item {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__info {
+      margin: 30px 0;
+      background-color: #fff;
+      padding: 16px;
+      &--heading {
+        font-size: 26px;
+        text-transform: uppercase;
+        padding: 14px 0;
+        color: $mainColor;
+      }
+      &--des {
+        p {
+          font-size: 16px;
+          color: $mainTextColor;
+        }
+      }
+    }
+  }
+  .car-detail-info {
+    background-color: #fff;
+    padding: 16px;
+    &__name {
+      font-size: 22px;
+      font-weight: 500;
+      color: $mainColor;
+      margin-bottom: 0;
+      padding: 14px 0px;
+      border-bottom: 2px solid #ccc;
+    }
+    &__price {
+      font-size: 18px;
+      color: $secondTextColor;
+      padding: 16px 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        padding: 8px 0;
+        font-size: 16px;
+        span {
+          display: inline-block;
+          width: 35%;
+        }
+      }
+    }
+    &__des {
+      font-size: 16px;
+      margin: 10px 0;
+      font-weight: 400;
+      line-height: 2;
+    }
+    &__oder {
+      width: 100%;
+      border-radius: 10px;
+      padding: 14px 0;
+      color: #fff;
+      background: blue;
+      border: none;
+      outline: none;
+      margin: 16px 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+  .related-products {
+    &__title {
+      font-size: 26px;
+      text-transform: uppercase;
+      margin: 14px 0;
+      color: #101e5d;
+    }
+    &__item {
+      background: #fff;
+      box-shadow: rgb(0 0 0 / 10%) -4px 9px 25px -6px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 14px 0 50px 0;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+        .related-products__item--img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &--img {
+        width: 100%;
+        overflow: hidden;
+        img {
+          transition: 0.5s;
+          width: 100%;
+        }
+      }
+      &--info {
+        padding: 16px;
+        .item__name {
+          white-space: nowrap;
+          overflow: hidden;
+          font-size: 18px;
+          text-overflow: ellipsis;
+          color: $mainColor;
+          padding: 14px 0;
+        }
+        .item__price {
+          font-size: 16px;
+          color: red;
+          font-weight: 600;
+        }
+      }
+      &--order {
+        display: block;
+        border: none;
+        outline: none;
+        background: blue;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 14px auto;
+      }
+    }
+  }
+}
