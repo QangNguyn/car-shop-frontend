@@ -1095,4 +1095,52 @@ footer .footer__item--list li {
   background-color: #376bff;
 }
 
+.blog-detail__img {
+  width: 100%;
+}
+.blog-detail__img img {
+  width: 100%;
+}
+.blog-detail__content {
+  padding: 30px;
+  background: #fff;
+}
+.blog-detail__content--name {
+  font-size: 24px;
+  color: #376bff;
+  padding-bottom: 10px;
+}
+.blog-detail__content p.blog-detail__content--text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.blog-detail__tag {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.blog-detail__tag h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 14px;
+}
+.blog-detail__tag ul {
+  list-style: none;
+  display: flex;
+}
+.blog-detail__tag ul li a {
+  display: block;
+  padding: 5px 20px;
+  background-color: #ccc;
+  margin-right: 7px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+.blog-detail__tag ul li:hover a {
+  background-color: #376bff;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
