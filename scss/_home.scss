@@ -82,6 +82,35 @@
     width: 100%;
     object-fit: cover;
   }
+  .owl-nav {
+    button {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 14px;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      &.owl-next {
+        left: unset;
+        background: rgba(0, 0, 0, 0.5);
+        right: 14px;
+      }
+      &.owl-prev {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      span {
+        font-size: 50px;
+        line-height: 100%;
+        color: #fff;
+      }
+    }
+  }
+  .owl-dots {
+    display: none;
+  }
 }
 
 // content
@@ -373,6 +402,7 @@
   position: fixed;
   bottom: 20px;
   left: 20px;
+  z-index: 100;
   &__list {
     display: flex;
     align-items: center;

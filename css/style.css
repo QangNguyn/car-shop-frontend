@@ -98,6 +98,33 @@ body .main p {
   width: 100%;
   object-fit: cover;
 }
+.banner .owl-nav button {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.banner .owl-nav button.owl-next {
+  left: unset;
+  background: rgba(0, 0, 0, 0.5);
+  right: 14px;
+}
+.banner .owl-nav button.owl-prev {
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner .owl-nav button span {
+  font-size: 50px;
+  line-height: 100%;
+  color: #fff;
+}
+.banner .owl-dots {
+  display: none;
+}
 
 .content-item {
   margin: 50px 0;
@@ -365,6 +392,7 @@ body .main p {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  z-index: 100;
 }
 .contact__list {
   display: flex;

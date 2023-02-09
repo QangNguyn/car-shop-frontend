@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css"
+    /> -->
     <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Home</title>
   </head>
   <body>
@@ -63,11 +71,25 @@
       </header>
       <!-- Bannerr -->
       <div class="banner">
-        <div class="banner__item">
-          <img
-            src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/banner/img-6.jpg"
-            alt=""
-          />
+        <div class="author-carousel owl-carousel owl-theme">
+          <div>
+            <img
+              src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/banner/img-6.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/banner/img-5.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/banner/img-4.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <!-- content -->
@@ -513,5 +535,19 @@
         </div>
       </footer>
     </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          nav: true,
+        });
+      });
+    </script>
   </body>
 </html>
