@@ -83,6 +83,7 @@
     object-fit: cover;
   }
   .owl-nav {
+    display: none;
     button {
       display: flex;
       position: absolute;
@@ -107,6 +108,11 @@
         color: #fff;
       }
     }
+    @media only screen and (min-width: 768px) {
+      & {
+        display: block;
+      }
+    }
   }
   .owl-dots {
     display: none;
@@ -122,12 +128,12 @@
         text-align: center;
         text-transform: uppercase;
         color: $secondTextColor;
-        font-size: 45px;
+        font-size: 35px;
         margin-bottom: 0;
       }
       &__description {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         padding: 14px 0;
         margin-bottom: 0;
         color: $mainTextColor;
@@ -163,7 +169,7 @@
         &--title {
           text-align: center;
           text-transform: uppercase;
-          font-size: 26px;
+          font-size: 20px;
           font-weight: 500;
           margin-bottom: 16px;
           color: $secondTextColor;
@@ -214,7 +220,7 @@
     .product {
       &__heading {
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 20px;
         color: #0e3947;
         font-weight: 600;
       }
@@ -318,7 +324,7 @@
     .facilities {
       &__heading {
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 20px;
         color: #0e3947;
         font-weight: 600;
       }
@@ -448,9 +454,10 @@
 // Footer
 footer {
   background-color: $mainColor;
-  padding: 60px 0;
+  padding: 30px 0;
   color: #fff;
   .footer__item {
+    margin-top: 30px;
     &--logo {
       img {
         width: 40%;
@@ -465,7 +472,10 @@ footer {
       padding: 14px 0;
     }
     &--form {
+      display: flex;
+      width: 100%;
       input {
+        width: 100%;
         padding: 10px;
         outline: none;
         font-size: 16px;
