@@ -499,13 +499,17 @@ footer .footer__item--list li {
   width: 100%;
 }
 .car-detail-page .car-detail-section .slider-nav {
-  margin-top: 20px;
+  margin-top: 10px;
 }
-.car-detail-page .car-detail-section .slider-nav__item {
-  width: 100%;
+.car-detail-page .car-detail-section .slider-nav .owl-stage {
+  display: flex;
 }
-.car-detail-page .car-detail-section .slider-nav__item img {
-  width: 100%;
+.car-detail-page .car-detail-section .slider-nav .owl-stage .owl-item {
+  margin: 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.car-detail-page .car-detail-section .slider-nav .owl-stage .owl-item.current {
+  border: 3px solid #ccc;
 }
 .car-detail-page .car-detail-section__info {
   margin: 30px 0;
@@ -629,6 +633,10 @@ footer .footer__item--list li {
   font-size: 16px;
   border-radius: 10px;
   margin: 14px auto;
+}
+
+.lb-data .lb-closeContainer .lb-close {
+  display: none;
 }
 
 .contact-us__heading {
