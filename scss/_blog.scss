@@ -42,7 +42,7 @@
       .posted-by {
         position: absolute;
         bottom: 20px;
-        width: 70%;
+        width: 90%;
         display: flex;
         justify-content: center;
         background: rgba(0, 0, 0, 0.5);
@@ -85,95 +85,106 @@
     }
   }
 }
-.recent-blog {
-  background-color: #fff;
-  padding: 24px;
-  border-bottom: 1px solid #ccc;
-  &__heading {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $mainTextColor;
-  }
-  &__item {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 20px;
-    &--img {
-      width: 60px;
-      height: 60px;
-      border-radius: 8px;
-      overflow: hidden;
-      img {
-        width: 100%;
-        object-fit: cover;
+.left-wrap {
+  box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
+    rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
+    rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+  .recent-blog {
+    background-color: #fff;
+    padding: 24px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 45px;
+    @media only screen and (min-width: 992px) {
+      & {
+        margin-top: 0;
       }
     }
-    &--info {
-      margin-left: 14px;
-      .blog__name {
-        font-size: 16px;
-        font-weight: 600;
+    &__heading {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $mainTextColor;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 20px;
+      &--img {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
       }
-      .blog__post-at {
-        font-size: 13px;
-        i {
-          margin-right: 5px;
+      &--info {
+        margin-left: 14px;
+        .blog__name {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .blog__post-at {
+          font-size: 13px;
+          i {
+            margin-right: 5px;
+          }
         }
       }
     }
   }
-}
-.category-list {
-  background-color: #fff;
-  padding: 24px;
-  border-bottom: 1px solid #ccc;
-  &__heading {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $mainTextColor;
-  }
-  ul {
-    list-style: none;
-    margin-top: 20px;
-    li {
-      padding: 8px 0;
-      font-size: 16px;
+  .category-list {
+    background-color: #fff;
+    padding: 24px;
+    border-bottom: 1px solid #ccc;
+    &__heading {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
       color: $mainTextColor;
-      cursor: pointer;
-      &:hover {
-        color: $secondTextColor;
+    }
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      li {
+        padding: 8px 0;
+        font-size: 16px;
+        color: $mainTextColor;
+        cursor: pointer;
+        &:hover {
+          color: $secondTextColor;
+        }
       }
     }
   }
-}
-.tag {
-  background-color: #fff;
-  padding: 24px;
-  &__heading {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $mainTextColor;
-  }
-  &__container {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    .tag__item {
-      display: block;
-      padding: 5px 14px;
-      background: #ccc;
-      margin-right: 5px;
-      margin-top: 7px;
-      color: #333;
-      text-decoration: none;
-      border-radius: 4px;
-      &:hover {
-        color: #fff;
-        background-color: $secondTextColor;
+  .tag {
+    background-color: #fff;
+    padding: 24px;
+    &__heading {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $mainTextColor;
+    }
+    &__container {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      .tag__item {
+        display: block;
+        padding: 5px 14px;
+        background: #ccc;
+        margin-right: 5px;
+        margin-top: 7px;
+        color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        &:hover {
+          color: #fff;
+          background-color: $secondTextColor;
+        }
       }
     }
   }
