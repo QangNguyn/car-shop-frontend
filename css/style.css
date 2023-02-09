@@ -730,6 +730,14 @@ footer .footer__item--list li {
   color: #fff;
 }
 
+.car-list {
+  margin-top: 45px;
+}
+@media only screen and (min-width: 992px) {
+  .car-list {
+    margin-top: 0;
+  }
+}
 .car-list__heading {
   display: flex;
   align-items: center;
@@ -742,7 +750,7 @@ footer .footer__item--list li {
   color: #333;
 }
 .car-list .filter-action {
-  width: 30%;
+  width: 40%;
   outline: none;
 }
 .car-list .filter-action option {
@@ -755,7 +763,7 @@ footer .footer__item--list li {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   overflow: hidden;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 40px;
   transition: 0.5s;
 }
 .car-list__list--item:hover {
@@ -768,10 +776,13 @@ footer .footer__item--list li {
 .car-list__list .list__img {
   width: 100%;
   overflow: hidden;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .car-list__list .list__img img {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   transition: 0.5s;
 }
 .car-list__list .list__info {
