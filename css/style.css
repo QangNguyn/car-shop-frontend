@@ -1013,7 +1013,7 @@ footer .footer__item--list li {
 .blog-list__item--img .posted-by {
   position: absolute;
   bottom: 20px;
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
@@ -1054,88 +1054,95 @@ footer .footer__item--list li {
   margin-top: 16px;
 }
 
-.recent-blog {
+.left-wrap {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.left-wrap .recent-blog {
   background-color: #fff;
   padding: 24px;
   border-bottom: 1px solid #ccc;
+  margin-top: 45px;
 }
-.recent-blog__heading {
+@media only screen and (min-width: 992px) {
+  .left-wrap .recent-blog {
+    margin-top: 0;
+  }
+}
+.left-wrap .recent-blog__heading {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
   color: #333;
 }
-.recent-blog__item {
+.left-wrap .recent-blog__item {
   display: flex;
   align-items: center;
   cursor: pointer;
   margin-top: 20px;
 }
-.recent-blog__item--img {
+.left-wrap .recent-blog__item--img {
   width: 60px;
   height: 60px;
   border-radius: 8px;
   overflow: hidden;
 }
-.recent-blog__item--img img {
+.left-wrap .recent-blog__item--img img {
   width: 100%;
   object-fit: cover;
 }
-.recent-blog__item--info {
+.left-wrap .recent-blog__item--info {
   margin-left: 14px;
 }
-.recent-blog__item--info .blog__name {
+.left-wrap .recent-blog__item--info .blog__name {
   font-size: 16px;
   font-weight: 600;
 }
-.recent-blog__item--info .blog__post-at {
+.left-wrap .recent-blog__item--info .blog__post-at {
   font-size: 13px;
 }
-.recent-blog__item--info .blog__post-at i {
+.left-wrap .recent-blog__item--info .blog__post-at i {
   margin-right: 5px;
 }
-
-.category-list {
+.left-wrap .category-list {
   background-color: #fff;
   padding: 24px;
   border-bottom: 1px solid #ccc;
 }
-.category-list__heading {
+.left-wrap .category-list__heading {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
   color: #333;
 }
-.category-list ul {
+.left-wrap .category-list ul {
   list-style: none;
   margin-top: 20px;
 }
-.category-list ul li {
+.left-wrap .category-list ul li {
   padding: 8px 0;
   font-size: 16px;
   color: #333;
   cursor: pointer;
 }
-.category-list ul li:hover {
+.left-wrap .category-list ul li:hover {
   color: #376bff;
 }
-
-.tag {
+.left-wrap .tag {
   background-color: #fff;
   padding: 24px;
 }
-.tag__heading {
+.left-wrap .tag__heading {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
   color: #333;
 }
-.tag__container {
+.left-wrap .tag__container {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-.tag__container .tag__item {
+.left-wrap .tag__container .tag__item {
   display: block;
   padding: 5px 14px;
   background: #ccc;
@@ -1145,7 +1152,7 @@ footer .footer__item--list li {
   text-decoration: none;
   border-radius: 4px;
 }
-.tag__container .tag__item:hover {
+.left-wrap .tag__container .tag__item:hover {
   color: #fff;
   background-color: #376bff;
 }
