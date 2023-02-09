@@ -8,11 +8,15 @@
       }
     }
     .slider-nav {
-      margin-top: 20px;
-      &__item {
-        width: 100%;
-        img {
-          width: 100%;
+      margin-top: 10px;
+      .owl-stage {
+        display: flex;
+        .owl-item {
+          margin: 0 10px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          &.current {
+            border: 3px solid #ccc;
+          }
         }
       }
     }
@@ -146,4 +150,7 @@
       }
     }
   }
+}
+.lb-data .lb-closeContainer .lb-close {
+  display: none;
 }
