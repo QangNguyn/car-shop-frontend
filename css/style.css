@@ -671,8 +671,11 @@ footer .footer__item--list li {
   padding: 10px;
 }
 .contact-us__about {
-  background: #fff;
-  padding: 45px;
+  margin-top: 30px;
+}
+.contact-us__about--form {
+  background-color: #fff;
+  padding: 30px;
 }
 .contact-us__about--form h3 {
   font-size: 23px;
@@ -703,12 +706,19 @@ footer .footer__item--list li {
   border-radius: 8px;
 }
 .contact-us__about--info {
-  padding-left: 20px;
+  padding: 30px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-us__about--info {
+    margin-top: 0;
+  }
 }
 .contact-us__about--info h3 {
   font-size: 23px;
   color: #333;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .contact-us__about--info ul {
   list-style: none;
