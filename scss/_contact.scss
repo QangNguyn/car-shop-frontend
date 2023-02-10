@@ -14,9 +14,10 @@
     padding: 10px;
   }
   &__about {
-    background: #fff;
-    padding: 45px;
+    margin-top: 30px;
     &--form {
+      background-color: #fff;
+      padding: 30px;
       h3 {
         font-size: 23px;
         color: $mainTextColor;
@@ -51,11 +52,18 @@
       }
     }
     &--info {
-      padding-left: 20px;
+      padding: 30px;
+      background-color: #fff;
+      margin-top: 30px;
+      @media only screen and (min-width: 992px) {
+        & {
+          margin-top: 0;
+        }
+      }
       h3 {
         font-size: 23px;
         color: $mainTextColor;
-        margin-bottom: 24px;
+        padding-bottom: 24px;
       }
       ul {
         list-style: none;
