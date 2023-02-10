@@ -92,10 +92,16 @@
   }
   .related-products {
     &__title {
-      font-size: 26px;
+      font-size: 20px;
       text-transform: uppercase;
-      margin: 14px 0;
       color: #101e5d;
+      margin-top: 45px;
+      @media only screen and (min-width: 992px) {
+        & {
+          font-size: 26px;
+          margin: 14px 0;
+        }
+      }
     }
     &__item {
       background: #fff;

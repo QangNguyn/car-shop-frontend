@@ -73,7 +73,7 @@
       <section class="car-detail-page">
         <div class="container">
           <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
               <div class="car-detail-section">
                 <div class="slider">
                   <div id="sync1" class="owl-carousel owl-theme">
@@ -121,6 +121,17 @@
                         />
                       </a>
                     </div>
+                    <div>
+                      <a
+                        href="https://drive.gianhangvn.com/image/ojjdrrt-2304980j32507.jpg"
+                        data-lightbox="roadtrip"
+                      >
+                        <img
+                          src="https://drive.gianhangvn.com/image/ojjdrrt-2304980j32507.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="slider-nav">
@@ -141,6 +152,12 @@
                       <div class="slider-nav__item">
                         <img
                           src="https://drive.gianhangvn.com/image/9spxrru-2304979j32507.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="slider-nav__item">
+                        <img
+                          src="https://drive.gianhangvn.com/image/ojjdrrt-2304980j32507.jpg"
                           alt=""
                         />
                       </div>
@@ -208,7 +225,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="car-detail-info">
                 <h3 class="car-detail-info__name">
                   Hyundai Grand i10 Hatchback 1.2 MT Tiêu chuẩn
@@ -232,7 +249,7 @@
           <div class="related-products">
             <div class="row">
               <h3 class="related-products__title">Có thể bạn quan tâm</h3>
-              <div class="col-3">
+              <div class="col-6 col-lg-3">
                 <div class="related-products__item">
                   <div class="related-products__item--img">
                     <img
@@ -251,7 +268,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3">
                 <div class="related-products__item">
                   <div class="related-products__item--img">
                     <img
@@ -270,7 +287,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3">
                 <div class="related-products__item">
                   <div class="related-products__item--img">
                     <img
@@ -289,7 +306,7 @@
                   </button>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3">
                 <div class="related-products__item">
                   <div class="related-products__item--img">
                     <img
@@ -383,17 +400,20 @@
       $(document).ready(function () {
         var sync1 = $("#sync1");
         var sync2 = $("#sync2");
-        var slidesPerPage = 4; //globaly define number of elements per page
+        var slidesPerPage = 5; //globaly define number of elements per page
         var syncedSecondary = true;
 
         sync1
           .owlCarousel({
             items: 1,
             slideSpeed: 2000,
-            autoplay: false,
             dots: true,
             loop: true,
             responsiveRefreshRate: 200,
+
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
           })
           .on("changed.owl.carousel", syncPosition);
 

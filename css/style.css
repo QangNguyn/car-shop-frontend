@@ -579,10 +579,16 @@ footer .footer__item--list li {
   cursor: pointer;
 }
 .car-detail-page .related-products__title {
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
-  margin: 14px 0;
   color: #101e5d;
+  margin-top: 45px;
+}
+@media only screen and (min-width: 992px) {
+  .car-detail-page .related-products__title {
+    font-size: 26px;
+    margin: 14px 0;
+  }
 }
 .car-detail-page .related-products__item {
   background: #fff;
