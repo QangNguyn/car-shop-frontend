@@ -103,7 +103,11 @@
               </p>
               <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="fast-access">
+                  <div
+                    class="fast-access"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
                     <span class="fast-access__icon">
                       <i class="fa-solid fa-money-bill"></i>
                     </span>
@@ -111,20 +115,20 @@
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="fast-access">
+                  <a href="#" class="fast-access">
                     <span class="fast-access__icon">
                       <i class="fa-solid fa-calculator"></i>
                     </span>
                     <span class="fast-access__title">Thủ tục trả góp</span>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-lg-4">
-                  <div class="fast-access">
+                  <a href="contact.html" class="fast-access">
                     <span class="fast-access__icon">
                       <i class="fa-solid fa-car"></i>
                     </span>
                     <span class="fast-access__title">Đăng ký lái thử</span>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="company-info__notification">
@@ -197,7 +201,7 @@
               <h3 class="product__heading">Danh mục sản phẩm</h3>
               <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="product__item">
+                  <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
                         src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
@@ -229,10 +233,10 @@
                       <i class="fa-solid fa-eye"></i>
                       <span>10 lượt xem</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="product__item">
+                  <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
                         src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
@@ -264,10 +268,10 @@
                       <i class="fa-solid fa-eye"></i>
                       <span>10 lượt xem</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="product__item">
+                  <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
                         src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
@@ -299,10 +303,10 @@
                       <i class="fa-solid fa-eye"></i>
                       <span>10 lượt xem</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="product__item">
+                  <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
                         src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
@@ -334,10 +338,10 @@
                       <i class="fa-solid fa-eye"></i>
                       <span>10 lượt xem</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="product__item">
+                  <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
                         src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
@@ -369,7 +373,7 @@
                       <i class="fa-solid fa-eye"></i>
                       <span>10 lượt xem</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -469,10 +473,88 @@
       </div>
 
       <!-- Back top -->
-      <div class="back-to-top">
+      <div id="back-to-top" class="back-to-top">
         <i class="fa-solid fa-play"></i>
       </div>
+
+      <!-- Modal layout -->
+      <div class="notification-modal">
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <h4>NHẬN BÁO GIÁ XE HYUNDAI</h4>
+              <p>
+                Ngay sau khi nhận được yêu cầu Chúng tôi sẽ gửi Báo giá Ưu đãi
+                đến Quý khách trong thời gian sớm nhất.
+              </p>
+              <form action="">
+                <div class="form-group">
+                  <label for="brand">Chọn danh mục xe</label>
+                  <select name="brand" id="brand">
+                    <option value="" disabled selected>Danh mục xe</option>
+                    <option value="category-1">Danh mục xe 1</option>
+                    <option value="category-2">Danh mục xe 2</option>
+                    <option value="category-3">Danh mục xe 3</option>
+                    <option value="category-4">Danh mục xe 4</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="form-group__wrap">
+                    <span>Hình thức thanh toán</span>
+                    <input
+                      type="radio"
+                      id="prepay"
+                      name="payment"
+                      value="prepay"
+                      checked
+                    />
+                    <label for="prepay">Trả trước</label>
+                    <input
+                      type="radio"
+                      id="postpay"
+                      name="payment"
+                      value="prepay"
+                    />
+                    <label for="postpay">Trả sau</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group__wrap">
+                    <div class="form-group__item">
+                      <label for="name">Họ tên</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Họ tên (Bắt buộc)"
+                      />
+                    </div>
+                    <div class="form-group__item">
+                      <label for="phone-number">Số điện thoại</label>
+                      <input
+                        type="text"
+                        name="phone-number"
+                        id="phone-number"
+                        placeholder="Số điện thoại (Bắt buộc)"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit">Gửi yêu cầu</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Footer -->
+
       <footer>
         <div class="container">
           <div class="row">
@@ -537,17 +619,7 @@
     </div>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 1,
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          nav: true,
-        });
-      });
-    </script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

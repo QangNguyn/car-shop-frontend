@@ -9,6 +9,9 @@ body .main {
   background-color: #f9f9f9;
   font-family: "Roboto", sans-serif;
 }
+body .main a {
+  text-decoration: none;
+}
 body .main h1,
 body .main h2,
 body .main h3,
@@ -236,6 +239,7 @@ body .main p {
 }
 .content-item .product__item {
   margin: 30px 0;
+  display: block;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   border-radius: 15px;
@@ -428,6 +432,7 @@ body .main p {
 .back-to-top {
   position: fixed;
   bottom: 20px;
+  z-index: 100;
   right: 20px;
   width: 45px;
   height: 45px;
@@ -438,9 +443,15 @@ body .main p {
   justify-content: center;
   margin-top: 10px;
   color: #fff;
+  z-index: 100;
+  cursor: pointer;
+}
+.back-to-top:hover {
+  opacity: 0.8;
 }
 .back-to-top i {
   transform: rotate(-90deg);
+  font-size: 16px;
 }
 
 footer {
@@ -1217,6 +1228,67 @@ footer .footer__item--list li {
 .blog-detail__tag ul li:hover a {
   background-color: #376bff;
   color: #fff;
+}
+
+.notification-modal .modal-content {
+  padding: 30px;
+}
+.notification-modal .modal-content h4 {
+  text-align: center;
+  font-size: 24px;
+  color: #376bff;
+  padding-bottom: 16px;
+}
+.notification-modal .modal-content p {
+  text-align: center;
+  font-size: 16px;
+}
+.notification-modal .modal-content form .form-group {
+  margin-top: 20px;
+}
+.notification-modal .modal-content form .form-group label {
+  font-size: 14px;
+}
+.notification-modal .modal-content form .form-group__wrap {
+  display: flex;
+  align-items: center;
+}
+.notification-modal .modal-content form .form-group__wrap span {
+  font-size: 14px;
+}
+.notification-modal .modal-content form .form-group__wrap input[type=radio] {
+  margin-left: 12px;
+}
+.notification-modal .modal-content form .form-group__wrap label {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.notification-modal .modal-content form .form-group__item {
+  flex: 1;
+}
+.notification-modal .modal-content form .form-group__item label {
+  margin-left: 0;
+}
+.notification-modal .modal-content form .form-group__item input[type=text] {
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+}
+.notification-modal .modal-content form .form-group__item:last-child {
+  margin-left: 10px;
+}
+.notification-modal .modal-content form .form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 10px;
+}
+.notification-modal .modal-content form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 10px 0;
+  background: #376bff;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
