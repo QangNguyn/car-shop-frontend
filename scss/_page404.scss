@@ -1,0 +1,39 @@
+.page-404-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  h1 {
+    font-size: 40px;
+    color: #333;
+    @media only screen and (min-width: 992px) {
+      & {
+        font-size: 60px;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    padding: 20px 0;
+    @media only screen and (min-width: 992px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+  a {
+    background: $secondTextColor;
+    color: #fff;
+    padding: 16px 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    @media only screen and (min-width: 992px) {
+      & {
+        font-size: 20px;
+      }
+    }
+  }
+}
