@@ -424,7 +424,6 @@ body .main p {
 }
 .contact__list {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 .contact__list--item {
@@ -443,6 +442,19 @@ body .main p {
 }
 .contact__list--item:hover {
   opacity: 0.9;
+}
+.contact__list .contact-hotline {
+  background: #b70100;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.contact__list .contact-hotline i {
+  margin-right: 5px;
 }
 
 .back-to-top {

@@ -429,7 +429,6 @@
   z-index: 100;
   &__list {
     display: flex;
-    align-items: center;
     flex-direction: column;
     &--item {
       background-color: $secondTextColor;
@@ -447,6 +446,19 @@
     }
     &--item:hover {
       opacity: 0.9;
+    }
+    .contact-hotline {
+      background: #b70100;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #fff;
+      i {
+        margin-right: 5px;
+      }
     }
   }
 }
