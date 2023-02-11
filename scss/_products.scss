@@ -144,6 +144,15 @@
     color: #333;
   }
   &__form {
+    &--search {
+      margin-top: 30px;
+      input {
+        width: 100%;
+        outline: none;
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+      }
+    }
     &--group {
       position: relative;
       margin-top: 30px;
