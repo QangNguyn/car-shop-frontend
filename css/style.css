@@ -933,6 +933,15 @@ footer .footer__item--list li {
   font-weight: 500;
   color: #333;
 }
+.filter-form__form--search {
+  margin-top: 30px;
+}
+.filter-form__form--search input {
+  width: 100%;
+  outline: none;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+}
 .filter-form__form--group {
   position: relative;
   margin-top: 30px;
