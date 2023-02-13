@@ -235,6 +235,7 @@
                       <div class="range-price__progress"></div>
                       <input
                         class="min-range"
+                        name="min-range"
                         type="range"
                         min="0"
                         max="3000000000"
@@ -243,6 +244,7 @@
                       />
                       <input
                         class="max-range"
+                        name="max-range"
                         type="range"
                         min="0"
                         max="3000000000"
@@ -344,46 +346,9 @@
       </footer>
     </div>
 
-    <script>
-      document
-        .querySelectorAll(".filter-form__form--group")
-        .forEach((select) => {
-          setupSelector(select);
-        });
-      function setupSelector(selector) {
-        selector.querySelector("select").addEventListener("change", (e) => {
-          // console.log("change", e.target.name);
-          // console.log(1);
-        });
-        selector.addEventListener("mousedown", (e) => {
-          e.preventDefault();
-          if (selector.querySelectorAll("ul").length == 0) {
-            const select = selector.children[0];
-            const dropDown = document.createElement("ul");
-            dropDown.className = "selector-options";
-            [...select.children].forEach((option) => {
-              const dropDownOption = document.createElement("li");
-              dropDownOption.textContent = option.textContent;
-              dropDownOption.addEventListener("mousedown", (e) => {
-                e.stopPropagation();
-                select.value = option.value;
-                selector.value = option.value;
-                select.dispatchEvent(new Event("change"));
-                selector.dispatchEvent(new Event("change"));
-                dropDown.remove();
-              });
-              dropDown.appendChild(dropDownOption);
-            });
-            selector.appendChild(dropDown);
-            document.addEventListener("click", (e) => {
-              if (!selector.contains(e.target)) {
-                dropDown.remove();
-              }
-            });
-          }
-        });
-      }
-    </script>
-    <script src="../script/products.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/node_modules/lightbox2/src/js/lightbox.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
