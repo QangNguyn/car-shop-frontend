@@ -10,6 +10,9 @@
     p {
       text-align: center;
       font-size: 16px;
+      span {
+        color: $secondTextColor;
+      }
     }
     form {
       .form-group {

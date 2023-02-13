@@ -1319,6 +1319,9 @@ footer .footer__item--list li {
   text-align: center;
   font-size: 16px;
 }
+.notification-modal .modal-content p span {
+  color: #376bff;
+}
 .notification-modal .modal-content form .form-group {
   margin-top: 20px;
 }
