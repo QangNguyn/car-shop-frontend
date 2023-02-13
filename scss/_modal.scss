@@ -23,9 +23,6 @@
           span {
             font-size: 14px;
           }
-          input[type="radio"] {
-            margin-left: 12px;
-          }
           label {
             margin-left: 5px;
             font-size: 14px;
@@ -41,7 +38,12 @@
             width: 100%;
             padding: 6px;
           }
-          &:last-child {
+          input[type="gmail"] {
+            margin-top: 10px;
+            width: 100%;
+            padding: 6px;
+          }
+          &:nth-child(2) {
             margin-left: 10px;
           }
         }
