@@ -1,5 +1,8 @@
 .notification-modal {
   .modal-content {
+    .btn-close {
+      display: none;
+    }
     padding: 30px;
     h4 {
       text-align: center;
@@ -41,7 +44,7 @@
             width: 100%;
             padding: 6px;
           }
-          input[type="gmail"] {
+          input[type="email"] {
             margin-top: 10px;
             width: 100%;
             padding: 6px;

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "jquery-toast-plugin": "^1.3.2",
     "lightbox2": "^2.11.3",
     "owl.carousel": "^2.3.4",
     "sass": "^1.58.0",

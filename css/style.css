@@ -1309,6 +1309,9 @@ footer .footer__item--list li {
 .notification-modal .modal-content {
   padding: 30px;
 }
+.notification-modal .modal-content .btn-close {
+  display: none;
+}
 .notification-modal .modal-content h4 {
   text-align: center;
   font-size: 24px;
@@ -1350,7 +1353,7 @@ footer .footer__item--list li {
   width: 100%;
   padding: 6px;
 }
-.notification-modal .modal-content form .form-group__item input[type=gmail] {
+.notification-modal .modal-content form .form-group__item input[type=email] {
   margin-top: 10px;
   width: 100%;
   padding: 6px;

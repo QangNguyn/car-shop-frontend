@@ -13,7 +13,6 @@ var btn = $("#back-to-top");
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
     btn.css("display", "flex");
-    console.log(btn);
   } else {
     btn.css("display", "none");
   }
@@ -206,3 +205,32 @@ $(document).ready(function () {
     sync1.data("owl.carousel").to(number, 300, true);
   });
 });
+
+const notificationModalForm = document.querySelector(
+  ".notification-modal #notification-modal form"
+);
+
+notificationModalForm.onsubmit = (e) => {
+  e.preventDefault();
+  const emailInput = notificationModalForm.querySelector("input[name=email]");
+  const nameInput = notificationModalForm.querySelector("input[name=name]");
+  const phoneNumberInput = notificationModalForm.querySelector(
+    "input[name=phone-number]"
+  );
+  if (
+    emailInput.value.trim() !== "" &&
+    nameInput.value.trim() !== "" &&
+    phoneNumberInput.value.trim() !== ""
+  ) {
+    $.toast({
+      heading: "Thành công",
+      text: "Yêu cầu của quý khách đã được chấp nhận",
+      icon: "success",
+      position: "top-right",
+    });
+    document.querySelector(".notification-modal .btn-close").click();
+    emailInput.value = "";
+    nameInput.value = "";
+    phoneNumberInput.value = "";
+  }
+};
