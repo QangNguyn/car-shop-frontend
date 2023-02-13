@@ -112,6 +112,7 @@ body .main p {
 .banner {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .banner img {
   width: 100%;
@@ -151,6 +152,34 @@ body .main p {
 }
 .banner .owl-dots {
   display: none;
+}
+.banner .banner-home__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80px;
+  display: none;
+  width: 50%;
+}
+.banner .banner-home__text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner .banner-home__text p {
+  padding: 15px 0;
+  font-size: 18px;
+}
+.banner .banner-home__text button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #376bff;
+}
+@media only screen and (min-width: 992px) {
+  .banner .banner-home__text {
+    display: block;
+  }
 }
 
 .content-item {
@@ -1303,9 +1332,6 @@ footer .footer__item--list li {
 .notification-modal .modal-content form .form-group__wrap span {
   font-size: 14px;
 }
-.notification-modal .modal-content form .form-group__wrap input[type=radio] {
-  margin-left: 12px;
-}
 .notification-modal .modal-content form .form-group__wrap label {
   margin-left: 5px;
   font-size: 14px;
@@ -1321,7 +1347,12 @@ footer .footer__item--list li {
   width: 100%;
   padding: 6px;
 }
-.notification-modal .modal-content form .form-group__item:last-child {
+.notification-modal .modal-content form .form-group__item input[type=gmail] {
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+}
+.notification-modal .modal-content form .form-group__item:nth-child(2) {
   margin-left: 10px;
 }
 .notification-modal .modal-content form .form-group select {
@@ -1427,6 +1458,26 @@ footer .footer__item--list li {
   .page-404-container a {
     font-size: 20px;
   }
+}
+
+.installment-procedure {
+  border: 2px solid #ccc;
+  padding: 20px;
+}
+.installment-procedure h1 {
+  font-size: 24px;
+  color: #376bff;
+  padding-bottom: 20px;
+}
+.installment-procedure p {
+  font-size: 16px;
+}
+.installment-procedure .share-social-btn {
+  display: inline-block;
+  background-color: #376bff;
+  color: #fff;
+  padding: 5px 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

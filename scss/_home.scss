@@ -95,6 +95,7 @@
 .banner {
   width: 100%;
   height: 100%;
+  position: relative;
   img {
     width: 100%;
     object-fit: cover;
@@ -133,6 +134,34 @@
   }
   .owl-dots {
     display: none;
+  }
+  .banner-home__text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+    display: none;
+    width: 50%;
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      padding: 15px 0;
+      font-size: 18px;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: $secondTextColor;
+    }
+    @media only screen and (min-width: 992px) {
+      & {
+        display: block;
+      }
+    }
   }
 }
 
