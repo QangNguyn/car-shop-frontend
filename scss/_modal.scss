@@ -25,7 +25,6 @@
         margin-top: 20px;
         &__wrap {
           display: flex;
-          align-items: center;
           span {
             font-size: 14px;
           }
@@ -36,6 +35,12 @@
         }
         &__item {
           flex: 1;
+          & > p {
+            text-align: start;
+            label.error {
+              color: red;
+            }
+          }
           label {
             margin-left: 0;
           }
