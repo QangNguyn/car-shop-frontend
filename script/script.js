@@ -206,31 +206,65 @@ $(document).ready(function () {
   });
 });
 
-const notificationModalForm = document.querySelector(
-  ".notification-modal #notification-modal form"
-);
-
-notificationModalForm.onsubmit = (e) => {
-  e.preventDefault();
-  const emailInput = notificationModalForm.querySelector("input[name=email]");
-  const nameInput = notificationModalForm.querySelector("input[name=name]");
-  const phoneNumberInput = notificationModalForm.querySelector(
-    "input[name=phone-number]"
-  );
-  if (
-    emailInput.value.trim() !== "" &&
-    nameInput.value.trim() !== "" &&
-    phoneNumberInput.value.trim() !== ""
-  ) {
-    $.toast({
-      heading: "Thành công",
-      text: "Yêu cầu của quý khách đã được chấp nhận",
-      icon: "success",
-      position: "top-right",
-    });
-    document.querySelector(".notification-modal .btn-close").click();
-    emailInput.value = "";
-    nameInput.value = "";
-    phoneNumberInput.value = "";
-  }
-};
+$().ready(function () {
+  $("#notification-form").validate({
+    onfocusout: false,
+    onkeyup: false,
+    onclick: false,
+    rules: {
+      email: {
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+      "phone-number": {
+        minlength: 8,
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Vui lòng nhập email.",
+        email: "Vui lòng nhập địa chỉ email hợp lệ",
+      },
+      name: {
+        required: "Vui lòng nhập tên.",
+      },
+      "phone-number": {
+        required: "Vui lòng nhập số điện thoại.",
+      },
+    },
+  });
+});
+$().ready(function () {
+  $("#order-form").validate({
+    onfocusout: false,
+    onkeyup: false,
+    onclick: false,
+    rules: {
+      email: {
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+      "phone-number": {
+        minlength: 8,
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Vui lòng nhập email.",
+        email: "Vui lòng nhập địa chỉ email hợp lệ",
+      },
+      name: {
+        required: "Vui lòng nhập tên.",
+      },
+      "phone-number": {
+        required: "Vui lòng nhập số điện thoại.",
+      },
+    },
+  });
+});

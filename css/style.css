@@ -1333,7 +1333,6 @@ footer .footer__item--list li {
 }
 .notification-modal .modal-content form .form-group__wrap {
   display: flex;
-  align-items: center;
 }
 .notification-modal .modal-content form .form-group__wrap span {
   font-size: 14px;
@@ -1344,6 +1343,12 @@ footer .footer__item--list li {
 }
 .notification-modal .modal-content form .form-group__item {
   flex: 1;
+}
+.notification-modal .modal-content form .form-group__item > p {
+  text-align: start;
+}
+.notification-modal .modal-content form .form-group__item > p label.error {
+  color: red;
 }
 .notification-modal .modal-content form .form-group__item label {
   margin-left: 0;
