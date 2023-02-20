@@ -56,11 +56,31 @@
             </a>
             <ul class="menu d-none d-lg-flex">
               <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Sản phẩm</a></li>
+              <li>
+                <a href="#">Sản phẩm<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="menu__dropdown">
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="#">Bảng giá</a></li>
               <li><a href="#">Thủ tục trả góp</a></li>
               <li><a href="#">Tin tức khuyến mãi</a></li>
             </ul>
+            <!-- <img
+              src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+              alt=""
+            /> -->
             <div class="menu-mobile d-lg-none">
               <div class="menu-icon">
                 <i class="fa-solid fa-bars"></i>
@@ -75,7 +95,68 @@
                 </div>
                 <ul>
                   <li><a href="./home.html">Trang chủ</a></li>
-                  <li><a href="./products.html">Sản phẩm</a></li>
+                  <li>
+                    <!-- <a href="./products.html">Sản phẩm</a> -->
+                    <a
+                      class="accordion-button collapsed d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                      href="./products.html"
+                    >
+                      <p class="flex-fill">Sản phẩm</p>
+                      <i class="fa-solid fa-angle-down float-end"></i>
+                    </a>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionFlushExample"
+                    >
+                      <ul class="accordion-item">
+                        <!-- <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          
+                        </li> -->
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                   <li><a href="#">Bảng giá</a></li>
                   <li><a href="#">Thủ tục trả góp</a></li>
                   <li><a href="./blog.html">Tin tức khuyến mãi</a></li>
@@ -244,7 +325,7 @@
             <div class="product">
               <h3 class="product__heading">Danh mục sản phẩm</h3>
               <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
@@ -268,18 +349,16 @@
                     <div class="product__item--info">
                       <h4 class="item__name">LAMBORGHINI</h4>
                       <h4 class="item__price">120.000.000 VNĐ</h4>
-                      <p class="item__description">
-                        Ưu đãi lên đến 20 triệu - Liên hệ 0974 812 868 để được
-                        tư vấn và báo giá khuyến mãi cực lớn trong tháng
-                      </p>
                     </div>
                     <div class="product__item--view">
-                      <i class="fa-solid fa-eye"></i>
-                      <span>10 lượt xem</span>
+                      <p>
+                        <i class="fa fa-gift"></i>
+                        <span> Nhận giá khuyến mãi</span>
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
@@ -303,18 +382,16 @@
                     <div class="product__item--info">
                       <h4 class="item__name">LAMBORGHINI</h4>
                       <h4 class="item__price">120.000.000 VNĐ</h4>
-                      <p class="item__description">
-                        Ưu đãi lên đến 20 triệu - Liên hệ 0974 812 868 để được
-                        tư vấn và báo giá khuyến mãi cực lớn trong tháng
-                      </p>
                     </div>
                     <div class="product__item--view">
-                      <i class="fa-solid fa-eye"></i>
-                      <span>10 lượt xem</span>
+                      <p>
+                        <i class="fa fa-gift"></i>
+                        <span> Nhận giá khuyến mãi</span>
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
@@ -338,18 +415,16 @@
                     <div class="product__item--info">
                       <h4 class="item__name">LAMBORGHINI</h4>
                       <h4 class="item__price">120.000.000 VNĐ</h4>
-                      <p class="item__description">
-                        Ưu đãi lên đến 20 triệu - Liên hệ 0974 812 868 để được
-                        tư vấn và báo giá khuyến mãi cực lớn trong tháng
-                      </p>
                     </div>
                     <div class="product__item--view">
-                      <i class="fa-solid fa-eye"></i>
-                      <span>10 lượt xem</span>
+                      <p>
+                        <i class="fa fa-gift"></i>
+                        <span> Nhận giá khuyến mãi</span>
+                      </p>
                     </div>
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a href="detail.html" class="product__item">
                     <div class="product__item--img">
                       <img
@@ -373,49 +448,12 @@
                     <div class="product__item--info">
                       <h4 class="item__name">LAMBORGHINI</h4>
                       <h4 class="item__price">120.000.000 VNĐ</h4>
-                      <p class="item__description">
-                        Ưu đãi lên đến 20 triệu - Liên hệ 0974 812 868 để được
-                        tư vấn và báo giá khuyến mãi cực lớn trong tháng
-                      </p>
                     </div>
                     <div class="product__item--view">
-                      <i class="fa-solid fa-eye"></i>
-                      <span>10 lượt xem</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                  <a href="detail.html" class="product__item">
-                    <div class="product__item--img">
-                      <img
-                        src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
-                        alt=""
-                      />
-                      <div class="modal-layout">
-                        <button>
-                          <i class="fa-solid fa-bag-shopping"></i>
-                        </button>
-                        <button>
-                          <i class="fa-solid fa-heart"></i>
-                        </button>
-                        <button>
-                          <i
-                            class="fa-solid fa-up-right-and-down-left-from-center"
-                          ></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="product__item--info">
-                      <h4 class="item__name">LAMBORGHINI</h4>
-                      <h4 class="item__price">120.000.000 VNĐ</h4>
-                      <p class="item__description">
-                        Ưu đãi lên đến 20 triệu - Liên hệ 0974 812 868 để được
-                        tư vấn và báo giá khuyến mãi cực lớn trong tháng
+                      <p>
+                        <i class="fa fa-gift"></i>
+                        <span> Nhận giá khuyến mãi</span>
                       </p>
-                    </div>
-                    <div class="product__item--view">
-                      <i class="fa-solid fa-eye"></i>
-                      <span>10 lượt xem</span>
                     </div>
                   </a>
                 </div>

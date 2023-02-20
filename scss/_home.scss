@@ -45,8 +45,33 @@
     }
     .menu {
       display: flex;
-      list-style: none;
+      list-style-type: none;
       margin-bottom: 0;
+      li {
+        padding-bottom: 10px;
+        .menu__dropdown {
+          position: absolute;
+          z-index: 3;
+          display: none;
+          background-color: whitesmoke;
+          margin-top: 10px;
+          box-shadow: 3px 5px 5px grey;
+          li {
+            border-bottom: solid 1px #ccc;
+            margin-top: 5px;
+            padding: 10px 0;
+            list-style-type: none;
+            a {
+              color: #333;
+            }
+          }
+          li:hover {
+            a {
+              color: $secondTextColor;
+            }
+          }
+        }
+      }
       a {
         text-decoration: none;
         color: $mainTextColor;
@@ -56,9 +81,17 @@
         font-weight: 500;
         transition: all 0.3s;
       }
+
       li:hover {
         a {
           color: $secondTextColor;
+        }
+      }
+
+      li:hover .menu__dropdown {
+        display: block;
+        a {
+          color: $mainTextColor;
         }
       }
     }
@@ -142,6 +175,7 @@
     left: 80px;
     display: none;
     width: 50%;
+    color: #fff;
     h1 {
       font-size: 50px;
       font-weight: 700;
@@ -271,8 +305,8 @@
         font-weight: 600;
       }
       &__item {
-        margin: 30px 0;
-        display: block;
+        margin: 30px;
+        // display: block;
         background: #fff;
         box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
           rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
@@ -325,7 +359,7 @@
           }
         }
         &--info {
-          padding: 14px;
+          // padding: 14px;
           h4 {
             margin-bottom: 0;
           }
@@ -353,13 +387,47 @@
           }
         }
         &--view {
-          padding: 14px;
-          border-top: 1px solid #ccc;
           background-color: $secondTextColor;
           color: #fff;
           font-size: 16px;
-          i {
-            margin-right: 5px;
+          width: max-content;
+          p {
+            border: 1px solid red;
+            position: relative;
+            padding: 14px;
+            &::before {
+              -webkit-animation: shine 1.8s;
+              animation: shine 1.8s;
+              animation-iteration-count: infinite;
+              position: absolute;
+              top: -2%;
+              left: -70%;
+              z-index: 2;
+              display: block;
+              content: "";
+              width: 50%;
+              height: 110%;
+              background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0,
+                #fafafa 100%
+              );
+              -webkit-transform: skewX(-25deg);
+              transform: skewX(-25deg);
+            }
+            i {
+              margin-right: 5px;
+            }
+          }
+          animation: example 4s linear infinite;
+        }
+
+        &--view:hover {
+          background-color: #8d0f20 !important;
+          p {
+            &::before {
+              border-color: #8d0f20 !important;
+            }
           }
         }
       }
@@ -460,7 +528,7 @@
     display: flex;
     flex-direction: column;
     &--item {
-      background-color: $secondTextColor;
+      background-color: #288ad6;
       border-radius: 50%;
       width: 45px;
       height: 45px;
