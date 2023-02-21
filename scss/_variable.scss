@@ -3,21 +3,28 @@ $mainTextColor: #333;
 $secondTextColor: #eb171f;
 $linkTextColor: #288ad6;
 
-
 // animation-button
 @keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:red; left:200px; top:0px;}
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 200px;
+    top: 0px;
+  }
 }
 
 @-webkit-keyframes shine {
   100% {
-      left: 100%
+    left: 100%;
   }
 }
 
 @keyframes shine {
   100% {
-      left: 100%
+    left: 100%;
   }
 }

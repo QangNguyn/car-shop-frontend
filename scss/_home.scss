@@ -395,10 +395,9 @@
             border: 1px solid red;
             position: relative;
             padding: 14px;
+            overflow: hidden;
             &::before {
-              -webkit-animation: shine 1.8s;
-              animation: shine 1.8s;
-              animation-iteration-count: infinite;
+              animation: shine 1.3s infinite ease-in-out;
               position: absolute;
               top: -2%;
               left: -70%;
@@ -419,7 +418,6 @@
               margin-right: 5px;
             }
           }
-          animation: example 4s linear infinite;
         }
 
         &--view:hover {
