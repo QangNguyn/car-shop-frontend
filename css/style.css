@@ -53,7 +53,7 @@ body .main p {
 }
 
 .top-header {
-  background-color: #101e5d;
+  background-color: #bb162b;
 }
 .top-header .list-contact {
   padding: 10px 0;
@@ -69,7 +69,8 @@ body .main p {
 }
 
 .main-header {
-  background-color: #fff;
+  background: url(../image/backgroundheader.png) repeat center center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
 }
 .main-header .menu-mobile-modal {
@@ -95,6 +96,11 @@ body .main p {
 }
 .main-header__group .logo {
   text-decoration: none;
+  display: block;
+  width: 20%;
+}
+.main-header__group .logo img {
+  width: 100%;
 }
 .main-header__group .menu {
   display: flex;
@@ -122,7 +128,7 @@ body .main p {
   color: #333;
 }
 .main-header__group .menu li .menu__dropdown li:hover a {
-  color: #eb171f;
+  color: #bb162b;
 }
 .main-header__group .menu a {
   text-decoration: none;
@@ -134,7 +140,7 @@ body .main p {
   transition: all 0.3s;
 }
 .main-header__group .menu li:hover a {
-  color: #eb171f;
+  color: #bb162b;
 }
 .main-header__group .menu li:hover .menu__dropdown {
   display: block;
@@ -144,7 +150,7 @@ body .main p {
 }
 .main-header__group .menu-mobile .menu-icon {
   font-size: 20px;
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: #fff;
   padding: 10px;
   cursor: pointer;
@@ -226,7 +232,7 @@ body .main p {
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff;
-  background-color: #eb171f;
+  background-color: #bb162b;
 }
 @media only screen and (min-width: 992px) {
   .banner .banner-home__text {
@@ -240,7 +246,7 @@ body .main p {
 .content-item .company-info__heading {
   text-align: center;
   text-transform: uppercase;
-  color: #eb171f;
+  color: #bb162b;
   font-size: 35px;
   margin-bottom: 0;
 }
@@ -253,7 +259,7 @@ body .main p {
   font-weight: 500;
 }
 .content-item .company-info .fast-access {
-  background-color: #101e5d;
+  background-color: #bb162b;
   cursor: pointer;
   color: #fff;
   padding: 18px;
@@ -286,7 +292,7 @@ body .main p {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 16px;
-  color: #eb171f;
+  color: #bb162b;
 }
 .content-item .company-info__notification--title span {
   color: #333;
@@ -321,7 +327,7 @@ body .main p {
   border-radius: 50%;
   font-family: "Indie Flower", cursive;
   margin-right: 5px;
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: red;
   font-weight: bold;
   font-size: 140%;
@@ -389,13 +395,13 @@ body .main p {
 .content-item .product__item--info .item__name {
   font-size: 22px;
   font-weight: 600;
-  color: #101e5d;
+  color: #bb162b;
   padding: 14px 0;
   letter-spacing: 4px;
   transition: 0.5s;
 }
 .content-item .product__item--info .item__name:hover {
-  color: #eb171f;
+  color: #bb162b;
 }
 .content-item .product__item--info .item__price {
   color: red;
@@ -409,7 +415,7 @@ body .main p {
   color: #333;
 }
 .content-item .product__item--view {
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: #fff;
   font-size: 16px;
   width: max-content;
@@ -469,7 +475,7 @@ body .main p {
   width: 80px;
   height: 80px;
   background: #fff;
-  border: 2px dashed #eb171f;
+  border: 2px dashed #bb162b;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -481,7 +487,7 @@ body .main p {
 }
 .content-item .facilities__item--icon i {
   font-size: 45px;
-  color: #eb171f;
+  color: #bb162b;
 }
 .content-item .facilities__item--heading {
   margin: 18px 0;
@@ -498,7 +504,7 @@ body .main p {
 .content-item .facilities__item::after {
   content: " ";
   position: absolute;
-  background: #eb171f;
+  background: #bb162b;
   top: 100%;
   left: 0;
   right: 0;
@@ -546,7 +552,7 @@ body .main p {
   opacity: 0.9;
 }
 .contact__list .contact-hotline {
-  background: #b70100;
+  background: #bb162b;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   cursor: pointer;
   padding: 10px 20px;
@@ -567,7 +573,7 @@ body .main p {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #eb171f;
+  background-color: #bb162b;
   display: none;
   align-items: center;
   justify-content: center;
@@ -585,15 +591,15 @@ body .main p {
 }
 
 footer {
-  background-color: #101e5d;
+  background-color: #e6e6e6;
   padding: 30px 0;
-  color: #fff;
+  color: #333;
 }
 footer .footer__item {
   margin-top: 30px;
 }
 footer .footer__item--logo img {
-  width: 40%;
+  width: 80%;
 }
 footer .footer__item--des {
   font-size: 16px;
@@ -661,7 +667,7 @@ footer .footer__item--list li {
   font-size: 26px;
   text-transform: uppercase;
   padding: 14px 0;
-  color: #101e5d;
+  color: #bb162b;
 }
 .car-detail-page .car-detail-section__info--des p {
   font-size: 16px;
@@ -674,14 +680,14 @@ footer .footer__item--list li {
 .car-detail-page .car-detail-info__name {
   font-size: 22px;
   font-weight: 500;
-  color: #101e5d;
+  color: #bb162b;
   margin-bottom: 0;
   padding: 14px 0px;
   border-bottom: 2px solid #ccc;
 }
 .car-detail-page .car-detail-info__price {
   font-size: 18px;
-  color: #eb171f;
+  color: #bb162b;
   padding: 16px 0;
 }
 .car-detail-page .car-detail-info ul {
@@ -708,7 +714,7 @@ footer .footer__item--list li {
   border-radius: 10px;
   padding: 14px 0;
   color: #fff;
-  background: blue;
+  background: #bb162b;
   border: none;
   outline: none;
   margin: 16px 0;
@@ -762,7 +768,7 @@ footer .footer__item--list li {
   overflow: hidden;
   font-size: 18px;
   text-overflow: ellipsis;
-  color: #101e5d;
+  color: #bb162b;
   padding: 14px 0;
 }
 .car-detail-page .related-products__item--info .item__price {
@@ -774,7 +780,7 @@ footer .footer__item--list li {
   display: block;
   border: none;
   outline: none;
-  background: blue;
+  background: #bb162b;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
@@ -786,113 +792,75 @@ footer .footer__item--list li {
   display: none;
 }
 
-.contact-us__heading {
-  font-size: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #333;
-  padding: 14px 0;
+.test-drive__heading {
+  background-color: #bb162b;
   text-align: center;
-}
-.contact-us__des {
-  text-align: center;
-  color: #5a5959;
-  font-size: 18px;
-  padding: 10px;
-}
-.contact-us__about {
-  margin-top: 30px;
-}
-.contact-us__about--form {
-  background-color: #fff;
-  padding: 30px;
-}
-.contact-us__about--form h3 {
-  font-size: 23px;
-  color: #333;
-  margin-bottom: 24px;
-}
-.contact-us__about--form form .form-group label {
-  padding: 10px 0;
-  font-size: 16px;
-}
-.contact-us__about--form form .form-group input,
-.contact-us__about--form form .form-group textarea {
-  width: 100%;
-  margin-bottom: 15px;
   padding: 20px;
-  outline: none;
-  background-color: #f5f5f5;
-  border: none;
-  border-radius: 8px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 }
-.contact-us__about--form form button {
-  background-color: #eb171f;
+.test-drive__heading h2 {
+  font-size: 20px;
+  color: #fdfb56;
+  margin-bottom: 8px;
+}
+.test-drive__heading p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-style: italic;
   color: #fff;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-.contact-us__about--info {
-  padding: 30px;
-  background-color: #fff;
-  margin-top: 30px;
-}
-@media only screen and (min-width: 992px) {
-  .contact-us__about--info {
-    margin-top: 0;
-  }
-}
-.contact-us__about--info h3 {
-  font-size: 23px;
-  color: #333;
-  padding-bottom: 24px;
-}
-.contact-us__about--info ul {
-  list-style: none;
-  padding: 24px 20px;
-}
-.contact-us__about--info ul li {
-  font-size: 16px;
-  color: #5a5959;
-}
-.contact-us__about--info ul li i {
-  margin-right: 5px;
-  color: #eb171f;
-}
-.contact-us__about--info ul li span {
-  color: #333;
+  text-transform: inherit;
   font-weight: 500;
-  font-size: 18px;
 }
-.contact-us__about--info ul li p {
-  font-size: 16px;
-  margin: 10px 0;
+.test-drive__form {
+  margin-top: 10px;
 }
-.contact-us__about--info ul.social-list {
+.test-drive__form form .form-group {
   display: flex;
 }
-.contact-us__about--info ul.social-list li {
-  margin-right: 5px;
-  padding: 10px;
-  background-color: #376bff;
-  width: 50px;
-  height: 50px;
+.test-drive__form form .form-group input {
+  flex: 1;
+  outline: none;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  margin: 10px 10px;
+}
+.test-drive__form form .form-group select {
+  outline: none;
+  flex: 1;
+  padding: 10px 16px;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+}
+.test-drive__form form button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.contact-us__about--info ul.social-list li:hover {
-  opacity: 0.8;
-}
-.contact-us__about--info ul.social-list li i {
-  margin: 0;
   color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 12px 20px;
+  margin-top: 16px;
+  background-color: #bb162b;
+  border: none;
+  border-radius: 24px;
+}
+.test-drive__form form button span {
+  margin-left: 20px;
+}
+.test-drive__form form button i {
+  position: relative;
+  animation: arrowLeft 0.7s ease-in infinite;
+}
+@keyframes arrowLeft {
+  from {
+    opacity: 1;
+    left: 0;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+    left: 12px;
+  }
 }
 
 .car-list {
@@ -966,7 +934,7 @@ footer .footer__item--list li {
   padding: 10px 20px;
   margin-top: 14px;
   border-radius: 8px;
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -994,14 +962,14 @@ footer .footer__item--list li {
 }
 .pagination__item:hover {
   cursor: pointer;
-  background-color: #eb171f;
+  background-color: #bb162b;
 }
 .pagination__item:hover a,
 .pagination__item:hover span {
   color: #fff;
 }
 .pagination__item.active {
-  background-color: #eb171f;
+  background-color: #bb162b;
 }
 .pagination__item.active a {
   color: #fff;
@@ -1096,7 +1064,7 @@ footer .footer__item--list li {
   left: 0;
   border-radius: 5px;
   right: 0;
-  background: #eb171f;
+  background: #bb162b;
 }
 .filter-form__form--range-price input {
   -webkit-appearance: none;
@@ -1110,7 +1078,7 @@ footer .footer__item--list li {
   -webkit-appearance: none;
   width: 10px;
   height: 12px;
-  background-color: #eb171f;
+  background-color: #bb162b;
   pointer-events: auto;
 }
 .filter-form__form--range-price .range-price__text div {
@@ -1131,7 +1099,7 @@ footer .footer__item--list li {
   margin-top: 80px;
   width: 100%;
   padding: 12px 0;
-  background: #eb171f;
+  background: #bb162b;
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
@@ -1158,7 +1126,7 @@ footer .footer__item--list li {
   transform: scale(1.05);
 }
 .blog-list__item:hover .blog-list__item--img .posted-by {
-  background-color: #eb171f;
+  background-color: #bb162b;
   transition: 0.3s;
 }
 .blog-list__item:hover .blog-list__item--img .posted-by__item i {
@@ -1193,7 +1161,7 @@ footer .footer__item--list li {
 }
 .blog-list__item--img .posted-by__item i {
   margin-right: 5px;
-  color: #eb171f;
+  color: #bb162b;
 }
 .blog-list__item--img .posted-by__item:last-child {
   margin-right: 0;
@@ -1203,7 +1171,7 @@ footer .footer__item--list li {
 }
 .blog-list__item--info .item__heading {
   font-size: 21px;
-  color: #eb171f;
+  color: #bb162b;
   padding: 10px 0;
 }
 .blog-list__item--info .item__subheading {
@@ -1211,7 +1179,7 @@ footer .footer__item--list li {
   color: #3d3d3d;
 }
 .blog-list__item--info .item__read-more {
-  background: #eb171f;
+  background: #bb162b;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1289,7 +1257,7 @@ footer .footer__item--list li {
   cursor: pointer;
 }
 .left-wrap .category-list ul li:hover {
-  color: #eb171f;
+  color: #bb162b;
 }
 .left-wrap .tag {
   background-color: #fff;
@@ -1318,7 +1286,7 @@ footer .footer__item--list li {
 }
 .left-wrap .tag__container .tag__item:hover {
   color: #fff;
-  background-color: #eb171f;
+  background-color: #bb162b;
 }
 
 .blog-detail__img {
@@ -1333,7 +1301,7 @@ footer .footer__item--list li {
 }
 .blog-detail__content--name {
   font-size: 24px;
-  color: #eb171f;
+  color: #bb162b;
   padding-bottom: 10px;
 }
 .blog-detail__content p.blog-detail__content--text {
@@ -1365,7 +1333,7 @@ footer .footer__item--list li {
   border-radius: 5px;
 }
 .blog-detail__tag ul li:hover a {
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: #fff;
 }
 
@@ -1378,7 +1346,7 @@ footer .footer__item--list li {
 .notification-modal .modal-content h4 {
   text-align: center;
   font-size: 24px;
-  color: #eb171f;
+  color: #bb162b;
   padding-bottom: 16px;
 }
 .notification-modal .modal-content p {
@@ -1386,7 +1354,7 @@ footer .footer__item--list li {
   font-size: 16px;
 }
 .notification-modal .modal-content p span {
-  color: #eb171f;
+  color: #bb162b;
 }
 .notification-modal .modal-content form .form-group {
   margin-top: 20px;
@@ -1438,7 +1406,7 @@ footer .footer__item--list li {
   width: 100%;
   margin-top: 24px;
   padding: 10px 0;
-  background: #eb171f;
+  background: #bb162b;
   color: #fff;
   text-transform: uppercase;
 }
@@ -1520,7 +1488,7 @@ footer .footer__item--list li {
   }
 }
 .page-404-container a {
-  background: #eb171f;
+  background: #bb162b;
   color: #fff;
   padding: 16px 35px;
   font-size: 14px;
@@ -1539,7 +1507,7 @@ footer .footer__item--list li {
 }
 .installment-procedure h1 {
   font-size: 24px;
-  color: #eb171f;
+  color: #bb162b;
   padding-bottom: 20px;
 }
 .installment-procedure p {
@@ -1547,48 +1515,10 @@ footer .footer__item--list li {
 }
 .installment-procedure .share-social-btn {
   display: inline-block;
-  background-color: #eb171f;
+  background-color: #bb162b;
   color: #fff;
   padding: 5px 20px;
   margin-bottom: 20px;
-}
-
-h1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-ul {
-  padding: 0;
-}
-
-.row {
-  justify-content: center;
-  gap: 20px;
-}
-.row .subscribe-mobile {
-  padding: 5px;
-}
-
-.subscribe button {
-  width: 30%;
-  height: 40px;
-  color: white;
-  border-radius: 40px;
-  border: none;
-  background-color: rgb(246, 64, 64);
-  font-size: 16px;
-  font-weight: 500;
-}
-.subscribe button:hover {
-  background-color: #eb171f;
-  transition: all 0.5s ease;
-}
-
-@media (max-width: 780px) {
-  .subscribe button {
-    width: 75% !important;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

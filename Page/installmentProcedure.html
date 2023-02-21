@@ -36,6 +36,7 @@
   </head>
   <body>
     <div class="main">
+      <!-- Top header -->
       <header class="top-header">
         <div class="container">
           <div class="row">
@@ -60,24 +61,125 @@
           <div class="main-header__group">
             <a href="#" class="logo">
               <img
-                src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+                src="http://otohyundaithanhhoa.com/wp-content/uploads/2021/09/HTV_Logo_Horizontal_Blue_RGB.png"
                 alt=""
               />
             </a>
             <ul class="menu d-none d-lg-flex">
               <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Sản phẩm</a></li>
+              <li>
+                <a href="#">Sản phẩm<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="menu__dropdown">
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                  <li class="menu__dropdown--item">
+                    <a href="#">Lamboghini</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="#">Bảng giá</a></li>
               <li><a href="#">Thủ tục trả góp</a></li>
               <li><a href="#">Tin tức khuyến mãi</a></li>
             </ul>
+            <!-- <img
+              src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+              alt=""
+            /> -->
             <div class="menu-mobile d-lg-none">
               <div class="menu-icon">
                 <i class="fa-solid fa-bars"></i>
               </div>
+
+              <div class="menu-mobile__list">
+                <div class="logo">
+                  <img
+                    src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+                    alt=""
+                  />
+                </div>
+                <ul>
+                  <li><a href="./home.html">Trang chủ</a></li>
+                  <li>
+                    <!-- <a href="./products.html">Sản phẩm</a> -->
+                    <a
+                      class="accordion-button collapsed d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                      href="./products.html"
+                    >
+                      <p class="flex-fill">Sản phẩm</p>
+                      <i class="fa-solid fa-angle-down float-end"></i>
+                    </a>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionFlushExample"
+                    >
+                      <ul class="accordion-item">
+                        <!-- <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          
+                        </li> -->
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                        <li
+                          id="flush-collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <a href="#">hello</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Bảng giá</a></li>
+                  <li><a href="#">Thủ tục trả góp</a></li>
+                  <li><a href="./blog.html">Tin tức khuyến mãi</a></li>
+                </ul>
+                <div class="close-menu-mobile">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="menu-mobile-modal"></div>
       </header>
 
       <!-- Content -->
@@ -105,11 +207,11 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="footer__item">
                 <div class="footer__item--logo">
                   <img
-                    src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/logo.png"
+                    src="http://otohyundaithanhhoa.com/wp-content/uploads/2021/09/HTV_Logo_Horizontal_Blue_RGB.png"
                     alt=""
                   />
                 </div>
@@ -121,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="footer__item">
                 <h4 class="footer__item--heading">Liên hệ với chúng tôi</h4>
                 <ul class="footer__item--list">
@@ -140,7 +242,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="footer__item">
                 <h4 class="footer__item--heading">Dịch vụ khách hàng</h4>
                 <ul class="footer__item--list">
@@ -151,7 +253,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-3">
               <div class="footer__item">
                 <h4 class="footer__item--heading">Theo dõi bản tin</h4>
                 <div class="footer__item--form">

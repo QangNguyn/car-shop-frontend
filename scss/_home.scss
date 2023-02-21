@@ -32,8 +32,8 @@
       }
     }
   }
-  background-color: #fff;
-  // position: fixed;
+  background: url(../image/backgroundheader.png) repeat center center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
   &__group {
     display: flex;
@@ -42,6 +42,11 @@
     padding: 14px 0;
     .logo {
       text-decoration: none;
+      display: block;
+      width: 20%;
+      img {
+        width: 100%;
+      }
     }
     .menu {
       display: flex;
@@ -67,7 +72,7 @@
           }
           li:hover {
             a {
-              color: $secondTextColor;
+              color: $mainColor;
             }
           }
         }
@@ -84,7 +89,7 @@
 
       li:hover {
         a {
-          color: $secondTextColor;
+          color: $mainColor;
         }
       }
 
@@ -99,7 +104,7 @@
     .menu-mobile {
       .menu-icon {
         font-size: 20px;
-        background-color: $secondTextColor;
+        background-color: $mainColor;
         color: #fff;
         padding: 10px;
         cursor: pointer;
@@ -189,7 +194,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       color: #fff;
-      background-color: $secondTextColor;
+      background-color: $mainColor;
     }
     @media only screen and (min-width: 992px) {
       & {
@@ -207,7 +212,7 @@
       &__heading {
         text-align: center;
         text-transform: uppercase;
-        color: $secondTextColor;
+        color: $mainColor;
         font-size: 35px;
         margin-bottom: 0;
       }
@@ -252,7 +257,7 @@
           font-size: 20px;
           font-weight: 500;
           margin-bottom: 16px;
-          color: $secondTextColor;
+          color: $mainColor;
           span {
             color: $mainTextColor;
           }
@@ -288,7 +293,7 @@
           border-radius: 50%;
           font-family: "Indie Flower", cursive;
           margin-right: 5px;
-          background-color: $secondTextColor;
+          background-color: $mainColor;
           color: red;
           font-weight: bold;
           font-size: 140%;
@@ -372,7 +377,7 @@
             transition: 0.5s;
           }
           .item__name:hover {
-            color: $secondTextColor;
+            color: $mainColor;
           }
           .item__price {
             color: red;
@@ -387,7 +392,7 @@
           }
         }
         &--view {
-          background-color: $secondTextColor;
+          background-color: $mainColor;
           color: #fff;
           font-size: 16px;
           width: max-content;
@@ -459,7 +464,7 @@
           width: 80px;
           height: 80px;
           background: #fff;
-          border: 2px dashed $secondTextColor;
+          border: 2px dashed $mainColor;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -470,7 +475,7 @@
           transition: 1s;
           i {
             font-size: 45px;
-            color: $secondTextColor;
+            color: $mainColor;
           }
         }
         &--heading {
@@ -489,7 +494,7 @@
       &__item::after {
         content: " ";
         position: absolute;
-        background: $secondTextColor;
+        background: $mainColor;
         top: 100%;
         left: 0;
         right: 0;
@@ -543,7 +548,7 @@
       opacity: 0.9;
     }
     .contact-hotline {
-      background: #b70100;
+      background: $mainColor;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
       cursor: pointer;
       padding: 10px 20px;
@@ -566,7 +571,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $secondTextColor;
+  background-color: $mainColor;
   display: none;
   align-items: center;
   justify-content: center;
@@ -585,14 +590,14 @@
 
 // Footer
 footer {
-  background-color: $mainColor;
+  background-color: #e6e6e6;
   padding: 30px 0;
-  color: #fff;
+  color: #333;
   .footer__item {
     margin-top: 30px;
     &--logo {
       img {
-        width: 40%;
+        width: 80%;
       }
     }
     &--des {

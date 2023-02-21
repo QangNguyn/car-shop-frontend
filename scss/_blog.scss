@@ -19,7 +19,7 @@
           transform: scale(1.05);
         }
         .posted-by {
-          background-color: $secondTextColor;
+          background-color: $mainColor;
           transition: 0.3s;
           &__item {
             i {
@@ -56,7 +56,7 @@
           font-size: 16px;
           i {
             margin-right: 5px;
-            color: $secondTextColor;
+            color: $mainColor;
           }
         }
         &__item:last-child {
@@ -68,7 +68,7 @@
       padding: 24px;
       .item__heading {
         font-size: 21px;
-        color: $secondTextColor;
+        color: $mainColor;
         padding: 10px 0;
       }
       .item__subheading {
@@ -76,7 +76,7 @@
         color: #3d3d3d;
       }
       .item__read-more {
-        background: $secondTextColor;
+        background: $mainColor;
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
@@ -154,7 +154,7 @@
         color: $mainTextColor;
         cursor: pointer;
         &:hover {
-          color: $secondTextColor;
+          color: $mainColor;
         }
       }
     }
@@ -183,7 +183,7 @@
         border-radius: 4px;
         &:hover {
           color: #fff;
-          background-color: $secondTextColor;
+          background-color: $mainColor;
         }
       }
     }
