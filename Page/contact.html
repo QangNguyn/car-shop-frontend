@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/jquery-toast-plugin/dist/jquery.toast.min.css"
+    />
     <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,233 +20,285 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>test drive</title>
   </head>
   <body>
-    <div class="main">
-      <!-- Top header -->
-      <header class="top-header">
-        <div class="container">
-          <div class="row">
-            <div class="d-none d-md-block col">
-              <div class="list-contact">
-                <a href="#">
-                  <i class="fa-solid fa-phone"></i>
-                  <span>Hotline: 0123.456.789</span>
-                </a>
-                <a href="#">
-                  <i class="fa-solid fa-envelope"></i>
-                  <span>Email: abc@gmail.com</span>
-                </a>
+    <!-- Top header -->
+    <!-- Top header -->
+    <header class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="d-none d-md-block col">
+            <div class="list-contact">
+              <a href="#">
+                <i class="fa-solid fa-phone"></i>
+                <span>Hotline: 0123.456.789</span>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: abc@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__group">
+          <a href="#" class="logo">
+            <img
+              src="http://otohyundaithanhhoa.com/wp-content/uploads/2021/09/HTV_Logo_Horizontal_Blue_RGB.png"
+              alt=""
+            />
+          </a>
+          <ul class="menu d-none d-lg-flex">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+              <a href="#">Sản phẩm<i class="fa-solid fa-angle-down"></i></a>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown--item">
+                  <a href="#">Lamboghini</a>
+                </li>
+                <li class="menu__dropdown--item">
+                  <a href="#">Lamboghini</a>
+                </li>
+                <li class="menu__dropdown--item">
+                  <a href="#">Lamboghini</a>
+                </li>
+                <li class="menu__dropdown--item">
+                  <a href="#">Lamboghini</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Bảng giá</a></li>
+            <li><a href="#">Thủ tục trả góp</a></li>
+            <li><a href="#">Tin tức khuyến mãi</a></li>
+          </ul>
+          <!-- <img
+            src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+            alt=""
+          /> -->
+          <div class="menu-mobile d-lg-none">
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-mobile__list">
+              <div class="logo">
+                <img
+                  src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
+                  alt=""
+                />
+              </div>
+              <ul>
+                <li><a href="./home.html">Trang chủ</a></li>
+                <li>
+                  <!-- <a href="./products.html">Sản phẩm</a> -->
+                  <a
+                    class="accordion-button collapsed d-flex justify-content-between"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                    href="./products.html"
+                  >
+                    <p class="flex-fill">Sản phẩm</p>
+                    <i class="fa-solid fa-angle-down float-end"></i>
+                  </a>
+                  <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <ul class="accordion-item">
+                      <!-- <li
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        
+                      </li> -->
+                      <li
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <a href="#">hello</a>
+                      </li>
+                      <li
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <a href="#">hello</a>
+                      </li>
+                      <li
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <a href="#">hello</a>
+                      </li>
+                      <li
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <a href="#">hello</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Bảng giá</a></li>
+                <li><a href="#">Thủ tục trả góp</a></li>
+                <li><a href="./blog.html">Tin tức khuyến mãi</a></li>
+              </ul>
+              <div class="close-menu-mobile">
+                <i class="fa-solid fa-xmark"></i>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <!-- Header -->
-      <header class="main-header">
-        <div class="container">
-          <div class="main-header__group">
-            <a href="#" class="logo">
-              <img
-                src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/black-logo.png"
-                alt=""
-              />
-            </a>
-            <ul class="menu d-none d-lg-flex">
-              <li><a href="#">Trang chủ</a></li>
-              <li><a href="#">Sản phẩm</a></li>
-              <li><a href="#">Bảng giá</a></li>
-              <li><a href="#">Thủ tục trả góp</a></li>
-              <li><a href="#">Tin tức khuyến mãi</a></li>
-            </ul>
-            <div class="menu-mobile d-lg-none">
-              <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- Bannerr -->
+      </div>
+      <div class="menu-mobile-modal"></div>
+    </header>
 
-      <!-- content -->
-
-      <div class="content">
-        <div class="container">
-          <div class="content-item">
-            <div class="contact-us">
-              <h1 class="contact-us__heading">Liên hệ với chúng tôi</h1>
-              <p class="contact-us__des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                neque doloremque expedita soluta ea hic sit facilis obcaecati .
+    <!-- content -->
+    <div class="content">
+      <div class="container">
+        <div class="content-item">
+          <div class="test-drive">
+            <div class="test-drive__heading">
+              <h2>LIÊN HỆ</h2>
+              <p>
+                Ngay sau khi nhận được yêu cầu Chúng tôi sẽ liên hệ với Quý
+                khách trong thời gian sớm nhất.
               </p>
-              <div class="contact-us__about">
-                <div class="row">
-                  <div class="col-12 col-lg-7">
-                    <div class="contact-us__about--form">
-                      <h3>Gửi tin nhắn cho chúng tôi</h3>
-                      <form action="">
-                        <div class="form-group">
-                          <label class="test" for="full-name">Full name</label>
-                          <input
-                            type="text"
-                            name="full-name"
-                            id="full-name"
-                            placeholder="Nhập tên..."
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email</label>
-                          <input
-                            type="text"
-                            name="email"
-                            id="email"
-                            placeholder="Nhập email..."
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="phone">Số điện thoại</label>
-                          <input
-                            type="text"
-                            name="phone"
-                            id="phone"
-                            placeholder="Nhập số điện thoại..."
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="message">Tin nhắn</label>
-                          <textarea
-                            type="text"
-                            name="message"
-                            id="message"
-                            placeholder="Tin nhắn..."
-                            rows="5"
-                          ></textarea>
-                        </div>
-                        <button>Gửi tin nhắn</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5">
-                    <div class="contact-us__about--info">
-                      <h3>Thông tin liên lạc</h3>
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>Địa chỉ</span>
-                          <p>
-                            Moonshine St. 14/05 Light City, London, United
-                            Kingdom
-                          </p>
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-phone"></i>
-                          <span>Số điện thoại</span>
-                          <p>0123.456.789</p>
-                          <p>0123.456.789</p>
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>Email</span>
-                          <p>abc@gmail.com</p>
-                        </li>
-                        <li></li>
-                      </ul>
-                      <h3>Theo dõi chúng tôi</h3>
-                      <ul class="social-list">
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Contact -->
-
-      <div class="contact">
-        <div class="contact__list">
-          <div class="contact__list--item">
-            <img src="../image/contact/icon-messenger-9bwgkb3.png" alt="" />
-          </div>
-          <div class="contact__list--item">
-            <img src="../image/contact/icon-zalo-b3qvkar.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Back top -->
-      <div class="back-to-top">
-        <i class="fa-solid fa-play"></i>
-      </div>
-      <!-- Footer -->
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <div class="footer__item">
-                <div class="footer__item--logo">
-                  <img
-                    src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/logos/logo.png"
-                    alt=""
+            <div class="test-drive__form">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Họ tên" />
+                  <input
+                    type="text"
+                    name="phone-number"
+                    placeholder="Số điện thoại"
                   />
                 </div>
-                <div class="footer__item--des">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque error impedit odit, assumenda est aliquam. Molestiae
-                  eligendi quae aspernatur explicabo sequi eaque, amet culpa eos
-                  repudiandae dignissimos, odit consectetur magnam!
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Email" />
+                  <select name="province">
+                    <option value="" disabled selected>
+                      ==Chọn Tỉnh Thành==
+                    </option>
+                    <option value="1">Tỉnh 1</option>
+                    <option value="2">Tỉnh 2</option>
+                  </select>
                 </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="footer__item">
-                <h4 class="footer__item--heading">Liên hệ với chúng tôi</h4>
-                <ul class="footer__item--list">
-                  <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>9C9 Trần Quốc Hoàn</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>abc@gmail.com</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0123.123.123</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="footer__item">
-                <h4 class="footer__item--heading">Dịch vụ khách hàng</h4>
-                <ul class="footer__item--list">
-                  <li>Bảng giá xe huyndai</li>
-                  <li>Bảng giá xe huyndai</li>
-                  <li>Bảng giá xe huyndai</li>
-                  <li>Bảng giá xe huyndai</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="footer__item">
-                <h4 class="footer__item--heading">Theo dõi bản tin</h4>
-                <div class="footer__item--form">
-                  <input type="text" placeholder="Email address" />
-                  <button><i class="fa-regular fa-paper-plane"></i></button>
+                <div class="form-group">
+                  <select name="vehicles">
+                    <option value="" disabled selected>==Chọn dòng xe==</option>
+                    <option value="1">Xe 1</option>
+                    <option value="2">Xe 2</option>
+                  </select>
+                  <input type="date" />
                 </div>
+                <button type="submit">
+                  <i class="fa-solid fa-angles-right"></i>
+                  <span> Đăng ký lái thử ngay</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="contact">
+      <div class="contact__list">
+        <a href="#" class="contact__list--item">
+          <img src="../image/contact/icon-messenger-9bwgkb3.png" alt="" />
+        </a>
+        <a href="#" class="contact__list--item">
+          <img src="../image/contact/icon-zalo-b3qvkar.png" alt="" />
+        </a>
+        <div class="contact-hotline">
+          <i class="fa-solid fa-phone"></i>
+          <span>Hotline: 0123.123.123</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer__item">
+              <div class="footer__item--logo">
+                <img
+                  src="http://otohyundaithanhhoa.com/wp-content/uploads/2021/09/HTV_Logo_Horizontal_Blue_RGB.png"
+                  alt=""
+                />
+              </div>
+              <div class="footer__item--des">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                error impedit odit, assumenda est aliquam. Molestiae eligendi
+                quae aspernatur explicabo sequi eaque, amet culpa eos
+                repudiandae dignissimos, odit consectetur magnam!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer__item">
+              <h4 class="footer__item--heading">Liên hệ với chúng tôi</h4>
+              <ul class="footer__item--list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>9C9 Trần Quốc Hoàn</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>abc@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>0123.123.123</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer__item">
+              <h4 class="footer__item--heading">Dịch vụ khách hàng</h4>
+              <ul class="footer__item--list">
+                <li>Bảng giá xe huyndai</li>
+                <li>Bảng giá xe huyndai</li>
+                <li>Bảng giá xe huyndai</li>
+                <li>Bảng giá xe huyndai</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer__item">
+              <h4 class="footer__item--heading">Theo dõi bản tin</h4>
+              <div class="footer__item--form">
+                <input type="text" placeholder="Email address" />
+                <button><i class="fa-regular fa-paper-plane"></i></button>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

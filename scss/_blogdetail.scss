@@ -10,7 +10,7 @@
     background: #fff;
     &--name {
       font-size: 24px;
-      color: $secondTextColor;
+      color: $mainColor;
       padding-bottom: 10px;
     }
     p.blog-detail__content--text {
@@ -43,7 +43,7 @@
         }
         &:hover {
           a {
-            background-color: $secondTextColor;
+            background-color: $mainColor;
             color: #fff;
           }
         }

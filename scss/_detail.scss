@@ -51,7 +51,7 @@
     }
     &__price {
       font-size: 18px;
-      color: $secondTextColor;
+      color: $mainColor;
       padding: 16px 0;
     }
     ul {
@@ -78,7 +78,7 @@
       border-radius: 10px;
       padding: 14px 0;
       color: #fff;
-      background: blue;
+      background: $mainColor;
       border: none;
       outline: none;
       margin: 16px 0;
@@ -147,7 +147,7 @@
         display: block;
         border: none;
         outline: none;
-        background: blue;
+        background: $mainColor;
         color: #fff;
         padding: 10px 20px;
         font-size: 16px;

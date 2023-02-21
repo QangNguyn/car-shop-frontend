@@ -7,14 +7,14 @@
     h4 {
       text-align: center;
       font-size: 24px;
-      color: $secondTextColor;
+      color: $mainColor;
       padding-bottom: 16px;
     }
     p {
       text-align: center;
       font-size: 16px;
       span {
-        color: $secondTextColor;
+        color: $mainColor;
       }
     }
     form {
@@ -69,7 +69,7 @@
         width: 100%;
         margin-top: 24px;
         padding: 10px 0;
-        background: $secondTextColor;
+        background: $mainColor;
         color: #fff;
         text-transform: uppercase;
       }
