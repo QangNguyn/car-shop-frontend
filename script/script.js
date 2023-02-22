@@ -268,3 +268,13 @@ $().ready(function () {
     },
   });
 });
+if (document.querySelector(".share-social-btn")) {
+  document.querySelector(".share-social-btn").onclick = (e) => {
+    e.preventDefault();
+    const link = window.location.href;
+    console.log(link);
+    window.open(`https://www.facebook.com/share.php?u=${link}`);
+
+    return false;
+  };
+}
