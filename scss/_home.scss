@@ -380,15 +380,21 @@
             color: $mainColor;
           }
           .item__price {
-            color: red;
+            color: #333;
             font-size: 18px;
             font-weight: 500;
             padding-bottom: 14px;
           }
           .item__description {
             margin-bottom: 0;
+            -webkit-line-clamp: 3;
             font-size: 16px;
             color: #333;
+            width: 100%;
+            overflow: hidden;
+            line-height: 1.5;
+            max-height: 100px;
+            text-overflow: ellipsis;
           }
         }
         &--view {
@@ -396,6 +402,7 @@
           color: #fff;
           font-size: 16px;
           width: max-content;
+          margin-top: 14px;
           p {
             border: 1px solid red;
             position: relative;

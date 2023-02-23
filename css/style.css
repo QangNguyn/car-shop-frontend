@@ -404,21 +404,28 @@ body .main p {
   color: #bb162b;
 }
 .content-item .product__item--info .item__price {
-  color: red;
+  color: #333;
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 14px;
 }
 .content-item .product__item--info .item__description {
   margin-bottom: 0;
+  -webkit-line-clamp: 3;
   font-size: 16px;
   color: #333;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: 100px;
+  text-overflow: ellipsis;
 }
 .content-item .product__item--view {
   background-color: #bb162b;
   color: #fff;
   font-size: 16px;
   width: max-content;
+  margin-top: 14px;
 }
 .content-item .product__item--view p {
   border: 1px solid red;
@@ -863,8 +870,33 @@ footer .footer__item--list li {
   }
 }
 
+.list-category {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.list-category__heading {
+  color: #fff;
+  background-color: #bb162b;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.list-category__list {
+  list-style: none;
+}
+.list-category__list li {
+  padding: 14px 24px;
+  border-bottom: 1px solid #ccc;
+}
+.list-category__list li a {
+  color: #333;
+}
+
 .car-list {
-  margin-top: 45px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  margin-top: 30px;
 }
 @media only screen and (min-width: 992px) {
   .car-list {
@@ -910,8 +942,10 @@ footer .footer__item--list li {
 }
 .car-list__list .list__info {
   padding: 20px;
-  height: 100% .car-list__list .list__info --wrap;
-  height-padding: 20px;
+  height: 100%;
+}
+.car-list__list .list__info--wrap {
+  padding: 20px;
 }
 .car-list__list .list__info--name {
   font-size: 24px;
@@ -920,7 +954,7 @@ footer .footer__item--list li {
   padding-bottom: 14px;
 }
 .car-list__list .list__info--price {
-  color: red;
+  color: #333;
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 10px;
