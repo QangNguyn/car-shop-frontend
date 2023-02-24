@@ -139,6 +139,9 @@ body .main p {
   font-weight: 500;
   transition: all 0.3s;
 }
+.main-header__group .menu a i {
+  margin-left: 10px;
+}
 .main-header__group .menu li:hover a {
   color: #bb162b;
 }
@@ -417,7 +420,7 @@ body .main p {
   width: 100%;
   overflow: hidden;
   line-height: 1.5;
-  max-height: 100px;
+  height: 100px;
   text-overflow: ellipsis;
 }
 .content-item .product__item--view {
@@ -780,7 +783,7 @@ footer .footer__item--list li {
 }
 .car-detail-page .related-products__item--info .item__price {
   font-size: 16px;
-  color: red;
+  color: #333;
   font-weight: 600;
 }
 .car-detail-page .related-products__item--order {
@@ -887,6 +890,10 @@ footer .footer__item--list li {
 .list-category__list li {
   padding: 14px 24px;
   border-bottom: 1px solid #ccc;
+}
+.list-category__list li.active a {
+  color: #bb162b;
+  font-weight: 700;
 }
 .list-category__list li a {
   color: #333;

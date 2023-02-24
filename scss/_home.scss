@@ -85,6 +85,9 @@
         padding: 0 16px;
         font-weight: 500;
         transition: all 0.3s;
+        i {
+          margin-left: 10px;
+        }
       }
 
       li:hover {
@@ -393,7 +396,7 @@
             width: 100%;
             overflow: hidden;
             line-height: 1.5;
-            max-height: 100px;
+            height: 100px;
             text-overflow: ellipsis;
           }
         }
