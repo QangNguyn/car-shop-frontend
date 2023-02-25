@@ -225,68 +225,86 @@
                       <div
                         class="car-list__list--item mt-3 col-12 col-md-6 col-xl-4"
                       >
-                        <a href="detail.html" class="product__item">
-                          <div class="product__item--img">
+                        <div class="product__item">
+                          <a href="detail.html" class="product__item--img">
                             <img
                               src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
                               alt=""
                             />
-                          </div>
+                          </a>
                           <div class="product__item--info">
-                            <h4 class="item__name">LAMBORGHINI</h4>
+                            <h4 class="item__name">
+                              <a href="detail.html">LAMBORGHINI</a>
+                            </h4>
                             <h4 class="item__price">120.000.000 VNĐ</h4>
                           </div>
-                          <div class="product__item--view">
+                          <div
+                            class="product__item--view"
+                            data-bs-toggle="modal"
+                            data-bs-target="#notification-modal"
+                          >
                             <p>
                               <i class="fa fa-gift"></i>
                               <span> Nhận giá khuyến mãi</span>
                             </p>
                           </div>
-                        </a>
+                        </div>
                       </div>
                       <div
                         class="car-list__list--item mt-3 col-12 col-md-6 col-xl-4"
                       >
-                        <a href="detail.html" class="product__item">
-                          <div class="product__item--img">
+                        <div class="product__item">
+                          <a href="detail.html" class="product__item--img">
                             <img
                               src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
                               alt=""
                             />
-                          </div>
+                          </a>
                           <div class="product__item--info">
-                            <h4 class="item__name">LAMBORGHINI</h4>
+                            <h4 class="item__name">
+                              <a href="detail.html">LAMBORGHINI</a>
+                            </h4>
                             <h4 class="item__price">120.000.000 VNĐ</h4>
                           </div>
-                          <div class="product__item--view">
+                          <div
+                            class="product__item--view"
+                            data-bs-toggle="modal"
+                            data-bs-target="#notification-modal"
+                          >
                             <p>
                               <i class="fa fa-gift"></i>
                               <span> Nhận giá khuyến mãi</span>
                             </p>
                           </div>
-                        </a>
+                        </div>
                       </div>
                       <div
                         class="car-list__list--item mt-3 col-12 col-md-6 col-xl-4"
                       >
-                        <a href="detail.html" class="product__item">
-                          <div class="product__item--img">
+                        <div class="product__item">
+                          <a href="detail.html" class="product__item--img">
                             <img
                               src="https://storage.googleapis.com/theme-vessel-items/checking-sites/autocar-html/HTML/main/img/car/car-1.jpg"
                               alt=""
                             />
-                          </div>
+                          </a>
                           <div class="product__item--info">
-                            <h4 class="item__name">LAMBORGHINI</h4>
+                            <h4 class="item__name">
+                              <a href="detail.html">LAMBORGHINI</a>
+                            </h4>
                             <h4 class="item__price">120.000.000 VNĐ</h4>
                           </div>
-                          <div class="product__item--view">
+                          <div
+                            class="product__item--view"
+                            data-bs-toggle="modal"
+                            data-bs-target="#notification-modal"
+                          >
                             <p>
                               <i class="fa fa-gift"></i>
                               <span> Nhận giá khuyến mãi</span>
                             </p>
                           </div>
-                        </a>
+                        </div>
                       </div>
                       <!-- </div> -->
                     </div>
@@ -324,6 +342,79 @@
           </div>
           <div class="contact__list--item">
             <img src="../image/contact/icon-zalo-b3qvkar.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal layout -->
+
+      <div class="notification-modal">
+        <div
+          class="modal fade"
+          id="notification-modal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <h4>NHẬN BÁO GIÁ XE HYUNDAI</h4>
+              <p>
+                Ngay sau khi nhận được yêu cầu Chúng tôi sẽ gửi Báo giá Ưu đãi
+                đến Quý khách trong thời gian sớm nhất.
+              </p>
+              <form action="" id="notification-form">
+                <div class="form-group">
+                  <div class="form-group__item">
+                    <p>
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        placeholder="Email..."
+                        class="form-control"
+                        id="email"
+                        name="email"
+                      />
+                    </p>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group__wrap">
+                    <div class="form-group__item">
+                      <p>
+                        <label for="name">Họ tên</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Họ tên (Bắt buộc)"
+                          class="form-control"
+                        />
+                      </p>
+                    </div>
+                    <div class="form-group__item">
+                      <p>
+                        <label for="phone-number">Số điện thoại</label>
+                        <input
+                          type="text"
+                          name="phone-number"
+                          id="phone-number"
+                          class="form-control"
+                          placeholder="Số điện thoại (Bắt buộc)"
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit">Gửi yêu cầu</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
